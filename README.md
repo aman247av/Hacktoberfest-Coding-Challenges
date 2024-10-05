@@ -15,8 +15,9 @@ Welcome to the Hacktoberfest repository! 🎉 We're excited to have you particip
 3. **File Naming Convention**:  
    - The file name should be the **exact name of the question**.
    - If the question name contains spaces, replace the spaces with **underscores (`_`)**.
+   - Follow abbrev. CF - CodeForces, CC - CodeChef, LT - LeetCode, HR - Hackerrank, GFG - GeekForGeeks, etc
    - Add the appropriate file extension based on the language used:
-     - For example, if the question is "Score More Buddy", rename it as `Score_More_Buddy.cpp`, `Score_More_Buddy.java`, `Score_More_Buddy.py`, or `Score_More_Buddy.c` based on the language of your choice.
+     - For example, if the question is "Score More Buddy" on Codeforce, rename it as `CF_Score_More_Buddy.cpp`, `CF_Score_More_Buddy.java`, `CF_Score_More_Buddy.py`, or `CF_Score_More_Buddy.c` based on the language of your choice.
 
 4. **Adding the Problem Link**:  
    - At the **top of your code**, include a **link** to the problem statement as a **comment**.
