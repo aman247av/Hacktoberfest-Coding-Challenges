@@ -1,3 +1,6 @@
+// Problem Link: https://codeforces.com/problemset/problem/2020/B
+// Problem Name: Brightness Begins
+
 #include <iostream>
 #include <vector>
 #include <math.h>
