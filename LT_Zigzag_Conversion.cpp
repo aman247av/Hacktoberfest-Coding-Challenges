@@ -1,25 +1,17 @@
+// Problem Link : https://leetcode.com/problems/zigzag-conversion/
+
 #include <iostream>
 #include <vector>
 #include <string>
-#include <algorithm> // For std::min
+#include <algorithm>
 
 using namespace std;
 
-// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
-
-// P   A   H   N
-// A P L S I I G
-// Y   I   R
-// And then read line by line: "PAHNAPLSIIGYIR"
-
-// Write the code that will take a string and make this conversion given a number of rows:
-
-// string convert(string s, int numRows);
 
 string convert(string s, int numRows)
 {
     if (numRows == 1 || numRows >= s.size())
-        return s; // Handle edge cases
+        return s;   // Handle edge cases
 
     vector<string> rows(min(numRows, int(s.size()))); // Create rows for zigzag
     int curRow = 0;                                   // Current row index
@@ -27,16 +19,18 @@ string convert(string s, int numRows)
 
     for (char c : s)
     {
-        rows[curRow] += c; // Add character to the current row
+        rows[curRow] += c;    // Add character to the current row
+        
         // Change direction if we hit the top or bottom row
+
         if (curRow == 0 || curRow == numRows - 1)
             goingDown = !goingDown;
-        curRow += goingDown ? 1 : -1; // Move to the next row
+        curRow += goingDown ? 1 : -1;   // Move to the next row
     }
 
     string result;
     for (string row : rows)
-        result += row; // Concatenate all rows
+        result += row;  // Concatenate all rows
     return result;     // Return the final zigzag string
 }
 
