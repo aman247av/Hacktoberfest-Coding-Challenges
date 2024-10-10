@@ -1,3 +1,5 @@
+#Problem Link: https://leetcode.com/problems/grumpy-bookstore-owner/submissions/1301714002/?envType=problem-list-v2&envId=m9msj1rv
+
 class Solution:
     def maxSatisfied(self, customers: List[int], grumpy: List[int], minutes: int) -> int:
         n = len(customers)
